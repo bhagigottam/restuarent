@@ -1,0 +1,269 @@
+
+<h1 class="d-flex justify-content-center"><b>Menu</b></h1>
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Starters
+      </mat-panel-title>
+      <mat-panel-description>
+        starters menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of starters">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','starters',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','starters',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Tandoori
+      </mat-panel-title>
+      <mat-panel-description>
+         Tandoori menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of tandoori">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','tandoori',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','tandoori',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Biryani
+      </mat-panel-title>
+      <mat-panel-description>
+        Biryani menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of biryani">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','biryani',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','biryani',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Chineese
+      </mat-panel-title>
+      <mat-panel-description>
+        Chineese menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of chineese">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','chineese',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','chineese',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Curries
+      </mat-panel-title>
+      <mat-panel-description>
+        Curries menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of curries">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','curries',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','curries',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Desserts
+      </mat-panel-title>
+      <mat-panel-description>
+        Desserts menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of desserts">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','desserts',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','desserts',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Beverages
+      </mat-panel-title>
+      <mat-panel-description>
+        Beverages menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of beverages">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','beverages',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','beverages',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+
+
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Soups
+      </mat-panel-title>
+      <mat-panel-description>
+        Soups menu
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+  
+  <div *ngFor="let starter of soups">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{starter.name}}
+</mat-panel-title>
+<mat-panel-description>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <b><span>{{starter.qty}}</span></b>
+    <button class="btn btn-success btn-sm" (click)="updateItem('add','soups',starter.id)" >+ Add</button>
+<button class="btn btn-danger btn-sm" (click)="updateItem('remove','soups',starter.id)">- Remove</button>
+</div>
+    </mat-expansion-panel>
+  </div>
+</mat-expansion-panel>
+
+<div class="lastOne">
+    <button class="btn btn-block btn-success" (click)="saveToService()">Save orders to cart</button>
+    <button class="btn btn-block btn-danger" (click)="cancelOrders()">Cancel Orders</button>
+</div>

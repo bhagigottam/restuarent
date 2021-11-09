@@ -1,0 +1,83 @@
+<h2 class="text-center"><b>Cart</b></h2>
+
+<div class="row">
+    <div class="col-md-4">
+
+
+        <h2 class="text-center">Delivery Address:</h2>
+        <div>
+            <ul class="list-group ">
+                <li class="list-group-item">
+                    <div>
+                        <h2>Delivery Address 1</h2>
+                        <div>
+                            <p>H.no: X</p>
+                            <p>Street1</p>
+                            <p>Area1, City1</p>
+                            <p>State1, India</p>
+                        </div>
+                    </div>
+                </li>
+        
+                <li class="list-group-item">
+                        <div>
+                            <h2>Delivery Address 2</h2>
+                            <div>
+                                <p>H.no: X</p>
+                                <p>Street2</p>
+                                <p>Area2, City2</p>
+                                <p>State2, India</p>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li class="list-group-item">
+                            <div>
+                                <h2>Delivery Address 3</h2>
+                                <div>
+                                    <p>H.no: X</p>
+                                    <p>Street3</p>
+                                    <p>Area3, City3</p>
+                                    <p>State3, India</p>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+
+
+
+
+
+    </div>
+
+<div class="col-md-8">
+<div *ngFor="let cartItem of cartOrdersFinal">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+{{cartItem.name}}
+</mat-panel-title>
+<mat-panel-description>
+<p>{{cartItem.price}}</p>
+</mat-panel-description>
+</mat-expansion-panel-header>
+<div class="expBody">
+    <span>{{cartItem.qty}}</span>
+    
+    <button class="btn btn-success btn-sm" (click)="updateItem('add',cartItem.id)" >+ Add</button>
+    <button class="btn btn-danger btn-sm" (click)="updateItem('remove',cartItem.id)">- Remove</button>
+    </div>
+</mat-expansion-panel>
+
+
+
+</div>
+<div class="totalbar d-flex justify-content-around">
+    <h2>Total cost </h2>
+    <span></span>
+    <h1>{{mainTotal}}</h1>
+</div>
+</div>
+</div>

@@ -1,0 +1,68 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .logoIcon{
+   
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.cartIcon{
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+.allTopHeader{
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
+}
+.borderWhiteTop{
+    border-top: 2px solid white;
+}
+.linksContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 5px;
+    min-width: 100%;
+    span{
+        a{
+            color: white;
+            font-size: smaller;
+        }
+    }
+}
+.nav-link{
+    text-decoration: none;
+}
+.forParentRelative{
+    position: relative;
+
+}
+
+.forAbsoluteChild{
+   
+    position: absolute;
+    top: -10px;
+    justify-content: center;
+    align-items: center;
+    right: -15px;
+    display: flex;
+    min-width: 26px;
+    max-height: 26px;
+    min-height: 26px;
+    padding: 1px;
+    border-radius: 50%;
+    /* background-color: crimson; */
+    color: white;
+}
